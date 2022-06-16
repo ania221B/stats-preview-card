@@ -10,12 +10,12 @@ html:focus-within {
     scroll-behavior: smooth;
   }
   
-  /* Sets core body defaults */
-  body {
+/* Sets core body defaults */
+body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
-  }
+}
 
 /* Removes default margin */
 body,
@@ -31,6 +31,15 @@ dd {
   margin: 0;
 }
 
+/* Removes unnecessary space caused by line height  */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
 /* Gives default styles to a elements that don't have a class */
 a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -41,12 +50,14 @@ a:not([class]) {
   picture {
     max-width: 100%;
     display: block;
+    object-fit: cover;
   }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  padding: 0;
 }
 
 
