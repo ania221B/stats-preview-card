@@ -158,13 +158,17 @@ main {
     }
 }
 
+.card picture,
+.card img {
+    height: 100%;
+}
+
 .card img {
     mix-blend-mode: soft-light;
 }
 
 @media(min-width: 40em) {
     .card img {
-        min-height: var(--container-height);
         object-position: right;
     }
     
