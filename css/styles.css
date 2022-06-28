@@ -23,7 +23,7 @@
     --br: 0.5em;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     :root {    
     --fs-900: 2.25rem;
     }
@@ -86,7 +86,7 @@ main {
     grid-auto-flow: row;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .grid {
         grid-auto-flow: column;
         grid-template-columns: repeat(2, 1fr);
@@ -102,7 +102,7 @@ main {
     margin-top: 1em;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .flow > * + * {
         margin-top: 1.5em;
     }
@@ -112,7 +112,7 @@ main {
     margin: 1.5em 0 0 0;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
 
     .flow[data-flow-type="split"] > * + * {
         margin: 0 0 0 1em; 
@@ -165,7 +165,7 @@ main {
     overflow: hidden;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .card {
         text-align: left;
     }
@@ -175,7 +175,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(var(--clr-secondary-400), var(--clr-secondary-400));
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .card__image {
         grid-column: 2;
     }
@@ -190,7 +190,7 @@ main {
     mix-blend-mode: soft-light;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .card__image img {
         object-position: right;
     }
@@ -202,7 +202,7 @@ main {
     padding-inline: 2em;
 }
 
-@media(min-width: 45em) {
+@media(min-width: 40em) {
     .card__body {
         grid-column: 1;
 
