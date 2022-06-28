@@ -26,9 +26,9 @@
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    <main>
-      <div class="card grid">
-        <div class="card-image">
+    <main class="padding-block-32">
+      <div class="card grid container bg-primary-400" data-type="small">
+        <div class="card__image">
           <picture>
             <source
               media="(min-width: 40em)"
@@ -40,28 +40,44 @@
             />
           </picture>
         </div>
-        <div class="card-body flow">
+        <div class="card__body flex-column">
           <header class="flow">
-            <h1>Get <span>insights</span> that help your business grow.</h1>
+            <h1 class="text-pure-neutral">
+              Get <span class="text-accent">insights</span> that help your
+              business grow.
+            </h1>
             <p>
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency.
             </p>
           </header>
-          <ul class="stats grid grid-3-col" role="list">
-            <li><span> 10k+</span> companies</li>
-            <li><span>314</span> templates</li>
-            <li><span>12m+</span> queries</li>
+          <ul
+            class="card__stats grid flow text-faded-neutral"
+            data-col-num="3"
+            data-flow-type="split"
+            role="list"
+          >
+            <li><span class="text-pure-neutral"> 10k+</span> companies</li>
+            <li><span class="text-pure-neutral">314</span> templates</li>
+            <li><span class="text-pure-neutral">12m+</span> queries</li>
           </ul>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="attribution">
+    <footer class="padding-block-32">
+      <div class="attribution container">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="text-accent"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">ania221B</a>.
+        >. Coded by
+        <a
+          class="text-accent"
+          href="https://www.frontendmentor.io/profile/ania221B"
+          >ania221B</a
+        >.
       </div>
     </footer>
   </body>
