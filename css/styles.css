@@ -172,7 +172,7 @@ main {
 }
 
 .card__image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(var(--clr-secondary-400), var(--clr-secondary-400));
+    background-color: var(--clr-secondary-400);
 }
 
 @media(min-width: 40em) {
@@ -187,7 +187,7 @@ main {
 }
 
 .card__image img {
-    mix-blend-mode: soft-light;
+    mix-blend-mode: multiply;
 }
 
 @media(min-width: 40em) {
